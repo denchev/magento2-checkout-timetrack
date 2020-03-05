@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Htmlpet\CheckoutTimetrack\Api\TimetrackRepositoryInterface" type="Htmlpet\CheckoutTimetrack\Model\ResourceModel\TimetrackRepository" />
+    <preference for="Htmlpet\CheckoutTimetrack\Api\Data\TimetrackInterface" type="Htmlpet\CheckoutTimetrack\Model\Timetrack" />
+    <preference for="Htmlpet\CheckoutTimetrack\Api\Data\TimetrackSearchResultsInterface" type="Magento\Framework\Api\SearchResults" />
+    <preference for="Htmlpet\CheckoutTimetrack\Api\Data\TimetrackSearchResultsInterface" type="Htmlpet\CheckoutTimetrack\Model\ResourceModel\Timetrack\Collection" />
+
+    <type name="Magento\Sales\Model\OrderRepository">
+         <plugin name="addCheckoutTimetrack" type="Htmlpet\CheckoutTimetrack\Plugin\AddCheckoutTimetrack" />
+     </type>
+</config>
