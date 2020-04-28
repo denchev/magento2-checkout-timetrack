@@ -22,7 +22,8 @@ class InstallSchema implements InstallSchemaInterface
             ->addColumn('id', \Magento\Framework\Db\Ddl\Table::TYPE_INTEGER, null, [
                 'primary' => true,
                 'identity' => true,
-                'unsigned' => true
+                'unsigned' => true,
+                'nullable' => false
             ])
             ->addColumn('order_id', \Magento\Framework\Db\Ddl\Table::TYPE_INTEGER, null, [
                 'nullable' => false,

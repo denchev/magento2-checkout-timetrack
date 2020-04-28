@@ -1,0 +1,25 @@
+{
+    "name": "mdenchev/checkout-timetrack",
+    "description": "Track how long it takes a customer to complete an order.",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marush Denchev",
+            "email": "avreon@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Htmlpet\\CheckoutTimetrack\\": ""
+        }
+    },
+    "require": {
+        "php": "~7.1.3||~7.2.0||~7.3.0",
+        "magento/framework": "102.0.*"
+    },
+    "version": "1.0.0"
+}
